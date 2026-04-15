@@ -12,3 +12,6 @@ async def read_item(item_id: int, q: str = None):
     return {"item_id": item_id, "q": q}
 
 
+@app.get("/about")
+async def about():
+    return {"message": "This is the about page"}
